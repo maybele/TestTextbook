@@ -15,8 +15,6 @@
 		BA0827FC29853F5E005A4087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0827FA29853F5E005A4087 /* LaunchScreen.storyboard */; };
 		BA08280F29854625005A4087 /* TextbookListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08280D29854625005A4087 /* TextbookListViewCell.swift */; };
 		BA08281029854625005A4087 /* TextbookListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA08280E29854625005A4087 /* TextbookListViewCell.xib */; };
-		BA48B0B329854D1300DA4420 /* TextbookTabTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA48B0B129854D1300DA4420 /* TextbookTabTableViewCell.swift */; };
-		BA48B0B429854D1300DA4420 /* TextbookTabTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA48B0B229854D1300DA4420 /* TextbookTabTableViewCell.xib */; };
 		BA74AB3F2985473100E62205 /* Textbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74AB3E2985473100E62205 /* Textbook.swift */; };
 		BAD6877B29856295002DA326 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6877A29856295002DA326 /* TwoViewController.swift */; };
 		BAD6877D29856F73002DA326 /* TextbookHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6877C29856F73002DA326 /* TextbookHeaderView.swift */; };
@@ -24,6 +22,11 @@
 		BAD687812985716B002DA326 /* TextbookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD687802985716B002DA326 /* TextbookDetailViewController.swift */; };
 		BADA34DB29864A4100B59E59 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADA34DA29864A4100B59E59 /* WebViewController.swift */; };
 		BADA34DD2986621C00B59E59 /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADA34DC2986621B00B59E59 /* WebView.xib */; };
+		BADA34DF2986A10800B59E59 /* TextbookTabTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADA34DE2986A10800B59E59 /* TextbookTabTableView.xib */; };
+		BADA34E12986A1C900B59E59 /* DummyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADA34E02986A1C900B59E59 /* DummyView.xib */; };
+		BADA34E32986A3B200B59E59 /* TextbookTabTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADA34E22986A3B200B59E59 /* TextbookTabTableView.swift */; };
+		BADA34E62986B27D00B59E59 /* TextbookSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADA34E42986B27C00B59E59 /* TextbookSearchTableViewCell.swift */; };
+		BADA34E72986B27D00B59E59 /* TextbookSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADA34E52986B27D00B59E59 /* TextbookSearchTableViewCell.xib */; };
 		BAE1E421298575EA00897C9F /* ChapterListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE1E41F298575EA00897C9F /* ChapterListTableViewCell.swift */; };
 		BAE1E422298575EA00897C9F /* ChapterListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAE1E420298575EA00897C9F /* ChapterListTableViewCell.xib */; };
 		BAE1E42A29857FB100897C9F /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE1E42929857FB100897C9F /* Datasource.swift */; };
@@ -40,8 +43,6 @@
 		BA0827FD29853F5E005A4087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA08280D29854625005A4087 /* TextbookListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookListViewCell.swift; sourceTree = "<group>"; };
 		BA08280E29854625005A4087 /* TextbookListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextbookListViewCell.xib; sourceTree = "<group>"; };
-		BA48B0B129854D1300DA4420 /* TextbookTabTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookTabTableViewCell.swift; sourceTree = "<group>"; };
-		BA48B0B229854D1300DA4420 /* TextbookTabTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextbookTabTableViewCell.xib; sourceTree = "<group>"; };
 		BA74AB3E2985473100E62205 /* Textbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textbook.swift; sourceTree = "<group>"; };
 		BAD6877A29856295002DA326 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		BAD6877C29856F73002DA326 /* TextbookHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookHeaderView.swift; sourceTree = "<group>"; };
@@ -49,6 +50,11 @@
 		BAD687802985716B002DA326 /* TextbookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookDetailViewController.swift; sourceTree = "<group>"; };
 		BADA34DA29864A4100B59E59 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		BADA34DC2986621B00B59E59 /* WebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
+		BADA34DE2986A10800B59E59 /* TextbookTabTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextbookTabTableView.xib; sourceTree = "<group>"; };
+		BADA34E02986A1C900B59E59 /* DummyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyView.xib; sourceTree = "<group>"; };
+		BADA34E22986A3B200B59E59 /* TextbookTabTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookTabTableView.swift; sourceTree = "<group>"; };
+		BADA34E42986B27C00B59E59 /* TextbookSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookSearchTableViewCell.swift; sourceTree = "<group>"; };
+		BADA34E52986B27D00B59E59 /* TextbookSearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextbookSearchTableViewCell.xib; sourceTree = "<group>"; };
 		BAE1E41F298575EA00897C9F /* ChapterListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListTableViewCell.swift; sourceTree = "<group>"; };
 		BAE1E420298575EA00897C9F /* ChapterListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterListTableViewCell.xib; sourceTree = "<group>"; };
 		BAE1E42929857FB100897C9F /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
@@ -102,8 +108,11 @@
 				BAD6877E29856F82002DA326 /* TextbookHeaderView.xib */,
 				BAE1E41F298575EA00897C9F /* ChapterListTableViewCell.swift */,
 				BAE1E420298575EA00897C9F /* ChapterListTableViewCell.xib */,
-				BA48B0B129854D1300DA4420 /* TextbookTabTableViewCell.swift */,
-				BA48B0B229854D1300DA4420 /* TextbookTabTableViewCell.xib */,
+				BADA34DE2986A10800B59E59 /* TextbookTabTableView.xib */,
+				BADA34E22986A3B200B59E59 /* TextbookTabTableView.swift */,
+				BADA34E02986A1C900B59E59 /* DummyView.xib */,
+				BADA34E42986B27C00B59E59 /* TextbookSearchTableViewCell.swift */,
+				BADA34E52986B27D00B59E59 /* TextbookSearchTableViewCell.xib */,
 				BA0827F329853F5C005A4087 /* ViewController.swift */,
 			);
 			path = TestTextbook;
@@ -176,13 +185,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA08281029854625005A4087 /* TextbookListViewCell.xib in Resources */,
-				BA48B0B429854D1300DA4420 /* TextbookTabTableViewCell.xib in Resources */,
+				BADA34E12986A1C900B59E59 /* DummyView.xib in Resources */,
 				BA0827FC29853F5E005A4087 /* LaunchScreen.storyboard in Resources */,
 				BAD6877F29856F82002DA326 /* TextbookHeaderView.xib in Resources */,
+				BADA34DF2986A10800B59E59 /* TextbookTabTableView.xib in Resources */,
 				BA0827F929853F5E005A4087 /* Assets.xcassets in Resources */,
 				BADA34DD2986621C00B59E59 /* WebView.xib in Resources */,
 				BAE1E422298575EA00897C9F /* ChapterListTableViewCell.xib in Resources */,
 				BA0827F729853F5C005A4087 /* Main.storyboard in Resources */,
+				BADA34E72986B27D00B59E59 /* TextbookSearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,10 +205,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA08280F29854625005A4087 /* TextbookListViewCell.swift in Sources */,
-				BA48B0B329854D1300DA4420 /* TextbookTabTableViewCell.swift in Sources */,
 				BA0827F429853F5C005A4087 /* ViewController.swift in Sources */,
 				BA74AB3F2985473100E62205 /* Textbook.swift in Sources */,
 				BAD687812985716B002DA326 /* TextbookDetailViewController.swift in Sources */,
+				BADA34E62986B27D00B59E59 /* TextbookSearchTableViewCell.swift in Sources */,
 				BAD6877B29856295002DA326 /* TwoViewController.swift in Sources */,
 				BA0827F029853F5C005A4087 /* AppDelegate.swift in Sources */,
 				BADA34DB29864A4100B59E59 /* WebViewController.swift in Sources */,
@@ -205,6 +216,7 @@
 				BAE1E421298575EA00897C9F /* ChapterListTableViewCell.swift in Sources */,
 				BA0827F229853F5C005A4087 /* SceneDelegate.swift in Sources */,
 				BAD6877D29856F73002DA326 /* TextbookHeaderView.swift in Sources */,
+				BADA34E32986A3B200B59E59 /* TextbookTabTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

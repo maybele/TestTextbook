@@ -1,14 +1,14 @@
 //
-//  TextbookTabTableViewCell.swift
+//  TextbookSearchTableViewCell.swift
 //  TestTextbook
 //
-//  Created by FDCBele on 1/28/23.
+//  Created by FDCBele on 1/29/23.
 //
 
 import UIKit
 
-class TextbookTabTableViewCell: UITableViewCell {
-    
+class TextbookSearchTableViewCell: UITableViewCell {
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

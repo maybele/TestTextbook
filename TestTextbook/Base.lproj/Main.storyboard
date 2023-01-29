@@ -18,43 +18,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="HCY-A7-CqA">
-                                <rect key="frame" x="0.0" y="400" width="414" height="496"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0o-uK-3Xf">
-                                <rect key="frame" x="107" y="180" width="240" height="128"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXJ-XD-cfu">
-                                        <rect key="frame" x="99" y="54" width="30" height="20"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
+                                <rect key="frame" x="0.0" y="148" width="414" height="748"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yXJ-XD-cfu" secondAttribute="trailing" constant="20" symbolic="YES" id="7uQ-tv-hv0"/>
-                                    <constraint firstItem="yXJ-XD-cfu" firstAttribute="top" secondItem="p0o-uK-3Xf" secondAttribute="top" constant="54" id="ecY-p8-UmD"/>
-                                    <constraint firstItem="yXJ-XD-cfu" firstAttribute="leading" secondItem="p0o-uK-3Xf" secondAttribute="leading" constant="99" id="rRo-Pe-nUG"/>
-                                    <constraint firstItem="yXJ-XD-cfu" firstAttribute="centerY" secondItem="p0o-uK-3Xf" secondAttribute="centerY" id="rYP-Yj-K1V"/>
+                                    <constraint firstAttribute="height" constant="748" id="upw-8H-Aa8"/>
                                 </constraints>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YlF-se-5R5" customClass="TextbookTabTableView" customModule="TestTextbook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="414" height="98"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f4q-W0-x0A"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="f4q-W0-x0A" firstAttribute="trailing" secondItem="p0o-uK-3Xf" secondAttribute="trailing" constant="67" id="HL8-Sx-opk"/>
+                            <constraint firstItem="YlF-se-5R5" firstAttribute="top" secondItem="Imh-lT-XQL" secondAttribute="top" constant="50" id="3Lx-pi-b6P"/>
+                            <constraint firstAttribute="bottom" secondItem="HCY-A7-CqA" secondAttribute="bottom" id="9F3-if-6pY"/>
+                            <constraint firstItem="HCY-A7-CqA" firstAttribute="top" secondItem="YlF-se-5R5" secondAttribute="bottom" id="D3k-uk-Y6e"/>
+                            <constraint firstItem="f4q-W0-x0A" firstAttribute="trailing" secondItem="YlF-se-5R5" secondAttribute="trailing" id="NiH-ga-GXQ"/>
                             <constraint firstItem="HCY-A7-CqA" firstAttribute="leading" secondItem="f4q-W0-x0A" secondAttribute="leading" id="XVZ-8v-FPQ"/>
-                            <constraint firstItem="p0o-uK-3Xf" firstAttribute="top" secondItem="f4q-W0-x0A" secondAttribute="top" constant="92" id="Ycs-zS-tFy"/>
-                            <constraint firstItem="HCY-A7-CqA" firstAttribute="top" secondItem="f4q-W0-x0A" secondAttribute="top" constant="312" id="eNu-hk-W9S"/>
-                            <constraint firstItem="HCY-A7-CqA" firstAttribute="top" secondItem="p0o-uK-3Xf" secondAttribute="bottom" constant="92" id="lBr-ji-wA1"/>
+                            <constraint firstItem="YlF-se-5R5" firstAttribute="leading" secondItem="f4q-W0-x0A" secondAttribute="leading" id="eUe-3x-My3"/>
+                            <constraint firstItem="YlF-se-5R5" firstAttribute="top" secondItem="Imh-lT-XQL" secondAttribute="topMargin" constant="-38" id="inW-BR-wbK"/>
+                            <constraint firstItem="HCY-A7-CqA" firstAttribute="top" secondItem="YlF-se-5R5" secondAttribute="bottom" id="nNZ-Pv-yjz"/>
                             <constraint firstItem="f4q-W0-x0A" firstAttribute="trailing" secondItem="HCY-A7-CqA" secondAttribute="trailing" id="rBp-Si-eVx"/>
-                            <constraint firstItem="p0o-uK-3Xf" firstAttribute="leading" secondItem="f4q-W0-x0A" secondAttribute="leading" constant="107" id="rx5-a9-fhE"/>
-                            <constraint firstAttribute="bottom" secondItem="HCY-A7-CqA" secondAttribute="bottom" id="uxo-hw-iLa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Xg-AD-HLo"/>
                     <connections>
+                        <outlet property="tabSelec" destination="YlF-se-5R5" id="VDm-Qd-bAK"/>
                         <outlet property="tbTableView" destination="HCY-A7-CqA" id="P0B-3s-kuK"/>
                     </connections>
                 </viewController>
@@ -86,7 +77,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DkP-tM-z3h"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="DkP-tM-z3h" firstAttribute="bottom" secondItem="5Id-lh-jLk" secondAttribute="bottom" id="HwD-Ug-VMC"/>
                             <constraint firstItem="DkP-tM-z3h" firstAttribute="trailing" secondItem="5Id-lh-jLk" secondAttribute="trailing" id="MXc-Yw-NCj"/>
@@ -109,30 +100,12 @@
         <scene sceneID="zKQ-oM-S39">
             <objects>
                 <viewController storyboardIdentifier="WebViewController" id="t0S-2c-i41" customClass="WebViewController" customModule="TestTextbook" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Xg0-V5-Nla">
+                    <view key="view" contentMode="scaleToFill" id="Xg0-V5-Nla">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LA6-AJ-ebV">
-                                <rect key="frame" x="82" y="294" width="250" height="250"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="YRU-Po-pj9"/>
-                                    <constraint firstAttribute="height" constant="250" id="p9E-gI-tXL"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jXi-yc-MFb"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="LA6-AJ-ebV" firstAttribute="centerY" secondItem="Xg0-V5-Nla" secondAttribute="centerY" id="TgD-ar-DUy"/>
-                            <constraint firstItem="LA6-AJ-ebV" firstAttribute="centerX" secondItem="Xg0-V5-Nla" secondAttribute="centerX" id="aav-HK-fld"/>
-                            <constraint firstItem="LA6-AJ-ebV" firstAttribute="top" secondItem="jXi-yc-MFb" secondAttribute="top" constant="250" id="ePu-Vm-Hcz"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="textbookWebView" destination="LA6-AJ-ebV" id="jlV-A3-eJ4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XB7-Te-rdr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,6 +119,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OmQ-bW-W2a">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

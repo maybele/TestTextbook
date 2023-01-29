@@ -30,8 +30,6 @@ class TextbookDetailViewController: UIViewController, UITableViewDelegate, UITab
         
         let xibDueDateSwitchTableViewCell = UINib(nibName: "ChapterListTableViewCell", bundle: Bundle.main)
         chapterTableView.register(xibDueDateSwitchTableViewCell, forCellReuseIdentifier: "ChapterListTableViewCell")
-        
-        
        
 //        if let title = textbook?.title{
 //            displayDumpLabel.text = title

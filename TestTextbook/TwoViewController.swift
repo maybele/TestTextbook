@@ -9,6 +9,8 @@ import UIKit
 
 class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    
+    @IBOutlet weak var tabSelec: TextbookTabTableView!
     @IBOutlet weak var tbTableView: UITableView!
     
     override func viewDidLoad() {
@@ -21,8 +23,11 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
         
         print("test")
         
-        let xibDueDateSwitchTableViewCell = UINib(nibName: "TextbookListViewCell", bundle: Bundle.main)
-        tbTableView.register(xibDueDateSwitchTableViewCell, forCellReuseIdentifier: "TextbookListViewCell")
+        let dequeueCell1 = UINib(nibName: "TextbookListViewCell", bundle: Bundle.main)
+        let dequeueCell2 = UINib(nibName: "TextbookSearchTableViewCell", bundle: Bundle.main)
+        
+        tbTableView.register(dequeueCell1, forCellReuseIdentifier: "TextbookListViewCell")
+        tbTableView.register(dequeueCell2, forCellReuseIdentifier: "TextbookSearchTableViewCell")
         
         //self.tbTableView.register(UITableViewCell.self, forCellReuseIdentifier: "TextbookListViewCell")
 
@@ -38,15 +43,15 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
         let textbook = datasource[indexPath.row]
         
         print("asfasf")
-//        if indexPath.row == 0 {
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "TextbookTabTableViewCell", for: indexPath) as! TextbookTabTableViewCell
-//            return cell
-//        } else {
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TextbookSearchTableViewCell", for: indexPath) as! TextbookSearchTableViewCell
+            return cell
+        } else {
                let cell = tableView.dequeueReusableCell(withIdentifier: "TextbookListViewCell", for: indexPath) as! TextbookListViewCell
                cell.titleLabel.text = textbook.title
                cell.descriptionLabel.text = textbook.description
         return cell
-  //  }
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
