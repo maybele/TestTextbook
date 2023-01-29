@@ -22,6 +22,8 @@
 		BAD6877D29856F73002DA326 /* TextbookHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6877C29856F73002DA326 /* TextbookHeaderView.swift */; };
 		BAD6877F29856F82002DA326 /* TextbookHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD6877E29856F82002DA326 /* TextbookHeaderView.xib */; };
 		BAD687812985716B002DA326 /* TextbookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD687802985716B002DA326 /* TextbookDetailViewController.swift */; };
+		BADA34DB29864A4100B59E59 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADA34DA29864A4100B59E59 /* WebViewController.swift */; };
+		BADA34DD2986621C00B59E59 /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BADA34DC2986621B00B59E59 /* WebView.xib */; };
 		BAE1E421298575EA00897C9F /* ChapterListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE1E41F298575EA00897C9F /* ChapterListTableViewCell.swift */; };
 		BAE1E422298575EA00897C9F /* ChapterListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAE1E420298575EA00897C9F /* ChapterListTableViewCell.xib */; };
 		BAE1E42A29857FB100897C9F /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE1E42929857FB100897C9F /* Datasource.swift */; };
@@ -45,6 +47,8 @@
 		BAD6877C29856F73002DA326 /* TextbookHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookHeaderView.swift; sourceTree = "<group>"; };
 		BAD6877E29856F82002DA326 /* TextbookHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextbookHeaderView.xib; sourceTree = "<group>"; };
 		BAD687802985716B002DA326 /* TextbookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookDetailViewController.swift; sourceTree = "<group>"; };
+		BADA34DA29864A4100B59E59 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		BADA34DC2986621B00B59E59 /* WebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
 		BAE1E41F298575EA00897C9F /* ChapterListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListTableViewCell.swift; sourceTree = "<group>"; };
 		BAE1E420298575EA00897C9F /* ChapterListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterListTableViewCell.xib; sourceTree = "<group>"; };
 		BAE1E42929857FB100897C9F /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 				BA0827FD29853F5E005A4087 /* Info.plist */,
 				BA0827FA29853F5E005A4087 /* LaunchScreen.storyboard */,
 				BA0827F529853F5C005A4087 /* Main.storyboard */,
+				BADA34DA29864A4100B59E59 /* WebViewController.swift */,
+				BADA34DC2986621B00B59E59 /* WebView.xib */,
 				BAD687802985716B002DA326 /* TextbookDetailViewController.swift */,
 				BAE1E42929857FB100897C9F /* Datasource.swift */,
 				BAD6877A29856295002DA326 /* TwoViewController.swift */,
@@ -174,6 +180,7 @@
 				BA0827FC29853F5E005A4087 /* LaunchScreen.storyboard in Resources */,
 				BAD6877F29856F82002DA326 /* TextbookHeaderView.xib in Resources */,
 				BA0827F929853F5E005A4087 /* Assets.xcassets in Resources */,
+				BADA34DD2986621C00B59E59 /* WebView.xib in Resources */,
 				BAE1E422298575EA00897C9F /* ChapterListTableViewCell.xib in Resources */,
 				BA0827F729853F5C005A4087 /* Main.storyboard in Resources */,
 			);
@@ -193,6 +200,7 @@
 				BAD687812985716B002DA326 /* TextbookDetailViewController.swift in Sources */,
 				BAD6877B29856295002DA326 /* TwoViewController.swift in Sources */,
 				BA0827F029853F5C005A4087 /* AppDelegate.swift in Sources */,
+				BADA34DB29864A4100B59E59 /* WebViewController.swift in Sources */,
 				BAE1E42A29857FB100897C9F /* Datasource.swift in Sources */,
 				BAE1E421298575EA00897C9F /* ChapterListTableViewCell.swift in Sources */,
 				BA0827F229853F5C005A4087 /* SceneDelegate.swift in Sources */,

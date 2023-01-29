@@ -107,3 +107,17 @@ public var datasource : [Textbook] = [
                          Chapter(chapTitle: "Chapter A4")
                          ])]),
      ]
+
+//class MainDatasource {
+//    var seriesDatasource: [Textbook] = {
+//        
+//    }
+//    
+//    var courseDatasource: [Textbook] = {
+//        
+//    }
+//    
+//    var favoriteDatasource: [Textbook] = {
+//        
+//    }
+//}

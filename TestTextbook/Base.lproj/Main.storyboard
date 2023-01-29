@@ -105,26 +105,34 @@
             </objects>
             <point key="canvasLocation" x="4470" y="66"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="zKQ-oM-S39">
             <objects>
-                <viewController id="t0S-2c-i41" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Xg0-V5-Nla">
+                <viewController storyboardIdentifier="WebViewController" id="t0S-2c-i41" customClass="WebViewController" customModule="TestTextbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Xg0-V5-Nla">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="91B-rO-yGY">
-                                <rect key="frame" x="20" y="44" width="313" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LA6-AJ-ebV">
+                                <rect key="frame" x="82" y="294" width="250" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="YRU-Po-pj9"/>
+                                    <constraint firstAttribute="height" constant="250" id="p9E-gI-tXL"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jXi-yc-MFb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LA6-AJ-ebV" firstAttribute="centerY" secondItem="Xg0-V5-Nla" secondAttribute="centerY" id="TgD-ar-DUy"/>
+                            <constraint firstItem="LA6-AJ-ebV" firstAttribute="centerX" secondItem="Xg0-V5-Nla" secondAttribute="centerX" id="aav-HK-fld"/>
+                            <constraint firstItem="LA6-AJ-ebV" firstAttribute="top" secondItem="jXi-yc-MFb" secondAttribute="top" constant="250" id="ePu-Vm-Hcz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textbookWebView" destination="LA6-AJ-ebV" id="jlV-A3-eJ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XB7-Te-rdr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

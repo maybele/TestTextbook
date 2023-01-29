@@ -79,22 +79,17 @@ class TextbookDetailViewController: UIViewController, UITableViewDelegate, UITab
   //  }
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-//         print("clicked")
-//         let textbook = datasource[indexPath.row]
-//   //      let cat = textbook.subCat[indexPath.row]
-//
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+         print("clicked")
+         let textbook = datasource[indexPath.row]
+
 //         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//         let vc = storyboard.instantiateViewController(withIdentifier: "TextbookDetailViewController") as! TextbookDetailViewController
-//
-//        let cell = tableView.cellForRow(at: indexPath)
-//          let url = cell.url
-//          let webView = WKWebView()
-//          webView.frame = self.view.bounds
-//          webView.load(URLRequest(url: url))
-//          self.view.addSubview(webView)
-//
-//         vc.textbook = textbook
-//         self.navigationController?.pushViewController(vc, animated: true)
-//     }
+//         let vc = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+
+        let webViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+           
+        
+        // vc.textbook = textbook
+         self.navigationController?.pushViewController(webViewController, animated: true)
+     }
 }
