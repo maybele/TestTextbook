@@ -34,7 +34,7 @@ public var datasource : [Textbook] = [
                          Chapter(chapTitle: "Chapter G1"),
                          Chapter(chapTitle: "Chapter G2")
                          ])]),
-     Textbook(title: "初心者コース", level: nil, description: "英会話を初めて学習する方、英語であいさつ・自己紹介ができるようになりたい方を対象としたコースです。", subcat: [
+     Textbook(title: "初心者コース", level: nil, description: "英会話を初めて学習する方、英語であいさつ・自己紹介ができるようになりたい方を対象としたコースです。基礎から英語を学びたい方のための教材をご用意しています。", subcat: [
          Subcategory(chapter: [
                          Chapter(chapTitle: "Chapter A1"),
                          Chapter(chapTitle: "Chapter A2")
