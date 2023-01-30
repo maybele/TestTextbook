@@ -17,10 +17,10 @@ public struct Textbook{
 
 public struct Subcategory{
     var title : String?
-    var description: String?
-    var chapter: [Chapter] = []
+    var chapters: [Chapter] = []
 }
 
 public struct Chapter{
     var chapTitle: String
+    var isFavorite : Bool
 }

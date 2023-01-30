@@ -14,7 +14,6 @@ class TextbookDetailViewController: UIViewController, UITableViewDelegate, UITab
     @IBOutlet weak var chapterTableView: UITableView!
     
     var textbook: Textbook?
-    var chapter: Chapter?
 
     var chapterDataSource : [Chapter] = []
     
@@ -68,7 +67,7 @@ class TextbookDetailViewController: UIViewController, UITableViewDelegate, UITab
      }
     
     func setSubCategory(category : Subcategory) {
-        self.chapterDataSource = category.chapter
+        self.chapterDataSource = category.chapters
         self.chapterTableView.reloadData()
     }
 }

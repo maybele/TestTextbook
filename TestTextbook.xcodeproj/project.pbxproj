@@ -15,6 +15,8 @@
 		BA0827FC29853F5E005A4087 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0827FA29853F5E005A4087 /* LaunchScreen.storyboard */; };
 		BA08280F29854625005A4087 /* TextbookListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA08280D29854625005A4087 /* TextbookListViewCell.swift */; };
 		BA08281029854625005A4087 /* TextbookListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA08280E29854625005A4087 /* TextbookListViewCell.xib */; };
+		BA406EC529880A4E0003624B /* NoTextbookView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA406EC429880A4E0003624B /* NoTextbookView.xib */; };
+		BA406EC929880B310003624B /* NoTextbookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA406EC829880B310003624B /* NoTextbookView.swift */; };
 		BA74AB3F2985473100E62205 /* Textbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74AB3E2985473100E62205 /* Textbook.swift */; };
 		BAD6877B29856295002DA326 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6877A29856295002DA326 /* TwoViewController.swift */; };
 		BAD6877D29856F73002DA326 /* TextbookHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6877C29856F73002DA326 /* TextbookHeaderView.swift */; };
@@ -43,6 +45,8 @@
 		BA0827FD29853F5E005A4087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA08280D29854625005A4087 /* TextbookListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookListViewCell.swift; sourceTree = "<group>"; };
 		BA08280E29854625005A4087 /* TextbookListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextbookListViewCell.xib; sourceTree = "<group>"; };
+		BA406EC429880A4E0003624B /* NoTextbookView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoTextbookView.xib; sourceTree = "<group>"; };
+		BA406EC829880B310003624B /* NoTextbookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTextbookView.swift; sourceTree = "<group>"; };
 		BA74AB3E2985473100E62205 /* Textbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textbook.swift; sourceTree = "<group>"; };
 		BAD6877A29856295002DA326 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		BAD6877C29856F73002DA326 /* TextbookHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookHeaderView.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				BA0827FD29853F5E005A4087 /* Info.plist */,
 				BA0827FA29853F5E005A4087 /* LaunchScreen.storyboard */,
 				BA0827F529853F5C005A4087 /* Main.storyboard */,
+				BA406EC429880A4E0003624B /* NoTextbookView.xib */,
+				BA406EC829880B310003624B /* NoTextbookView.swift */,
 				BADA34DA29864A4100B59E59 /* WebViewController.swift */,
 				BADA34DC2986621B00B59E59 /* WebView.xib */,
 				BAD687802985716B002DA326 /* TextbookDetailViewController.swift */,
@@ -193,6 +199,7 @@
 				BADA34DD2986621C00B59E59 /* WebView.xib in Resources */,
 				BAE1E422298575EA00897C9F /* ChapterListTableViewCell.xib in Resources */,
 				BA0827F729853F5C005A4087 /* Main.storyboard in Resources */,
+				BA406EC529880A4E0003624B /* NoTextbookView.xib in Resources */,
 				BADA34E72986B27D00B59E59 /* TextbookSearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +216,7 @@
 				BA74AB3F2985473100E62205 /* Textbook.swift in Sources */,
 				BAD687812985716B002DA326 /* TextbookDetailViewController.swift in Sources */,
 				BADA34E62986B27D00B59E59 /* TextbookSearchTableViewCell.swift in Sources */,
+				BA406EC929880B310003624B /* NoTextbookView.swift in Sources */,
 				BAD6877B29856295002DA326 /* TwoViewController.swift in Sources */,
 				BA0827F029853F5C005A4087 /* AppDelegate.swift in Sources */,
 				BADA34DB29864A4100B59E59 /* WebViewController.swift in Sources */,
