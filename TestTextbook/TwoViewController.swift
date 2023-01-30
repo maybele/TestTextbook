@@ -19,7 +19,7 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
         self.tbTableView.delegate = self
         self.tbTableView.dataSource = self
         
-        self.title = "Textbook List2"
+        self.title = "Textbook List"
         
         print("test")
         
@@ -43,6 +43,7 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
         let textbook = datasource[indexPath.row]
         
         print("asfasf")
+        
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TextbookSearchTableViewCell", for: indexPath) as! TextbookSearchTableViewCell
             return cell

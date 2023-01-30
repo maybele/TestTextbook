@@ -24,8 +24,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="SGu-bV-agw">
                                 <rect key="frame" x="0.0" y="0.0" width="38" height="78.5"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="new" translatesAutoresizingMaskIntoConstraints="NO" id="ObA-W0-Pku">
-                                        <rect key="frame" x="0.0" y="0.0" width="38" height="50"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.badge.exclamationmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ObA-W0-Pku">
+                                        <rect key="frame" x="-1.5" y="0.0" width="39.5" height="49.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Mbq-fO-WDV"/>
                                             <constraint firstAttribute="width" constant="38" id="ic3-LM-OWD"/>
@@ -221,6 +221,6 @@
     </objects>
     <resources>
         <image name="nativecamp" width="100" height="100"/>
-        <image name="new" width="28" height="28.006000518798828"/>
+        <image name="person.crop.circle.badge.exclamationmark" catalog="system" width="128" height="113"/>
     </resources>
 </document>
