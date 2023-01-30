@@ -8,16 +8,19 @@
 import UIKit
 
 class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    
+
     @IBOutlet weak var tabSelec: TextbookTabTableView!
     @IBOutlet weak var tbTableView: UITableView!
+    
+    var datasource : [Textbook] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tbTableView.delegate = self
         self.tbTableView.dataSource = self
+        
+        self.datasource = MainDataSource.courseDataSource
         
         self.title = "Textbook List"
         
@@ -35,9 +38,10 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
 //                               forCellReuseIdentifier: "TextbookListViewCell")
     }
     
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        if datasource == courseDataSource {
+//            return datasource.count
+//        }
         return datasource.count
     }
     
@@ -45,7 +49,6 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
         let textbook = datasource[indexPath.row]
         
         //print("This is textbook"(textbook))
-        
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TextbookSearchTableViewCell", for: indexPath) as! TextbookSearchTableViewCell
             return cell
