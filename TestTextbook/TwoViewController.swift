@@ -35,6 +35,8 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
 //                               forCellReuseIdentifier: "TextbookListViewCell")
     }
     
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return datasource.count
     }
@@ -42,7 +44,7 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let textbook = datasource[indexPath.row]
         
-        print("asfasf")
+        //print("This is textbook"(textbook))
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TextbookSearchTableViewCell", for: indexPath) as! TextbookSearchTableViewCell
@@ -56,7 +58,6 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-         print("clicked")
          let textbook = datasource[indexPath.row]
    //      let cat = textbook.subCat[indexPath.row]
 
