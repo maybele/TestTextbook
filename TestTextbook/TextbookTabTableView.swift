@@ -8,6 +8,7 @@
 import UIKit
 
 class TextbookTabTableView: UIView {
+    private var mListener : TabClickListener? = nil
 
     @IBOutlet weak var tabSelectionView: UIView!
     @IBOutlet weak var textbookTabButton: UIButton!
@@ -23,6 +24,7 @@ class TextbookTabTableView: UIView {
             self.textbookTabLine.backgroundColor = .red
             self.courseTabLine.backgroundColor = .clear
             self.favoritesTabLine.backgroundColor = .clear
+            self.mListener?.onTabClick(type: 0)
         }
     }
     
@@ -31,6 +33,7 @@ class TextbookTabTableView: UIView {
             self.textbookTabLine.backgroundColor = .clear
             self.courseTabLine.backgroundColor = .red
             self.favoritesTabLine.backgroundColor = .clear
+            self.mListener?.onTabClick(type: 1)
         }
     }
     
@@ -39,12 +42,17 @@ class TextbookTabTableView: UIView {
             self.textbookTabLine.backgroundColor = .clear
             self.courseTabLine.backgroundColor = .clear
             self.favoritesTabLine.backgroundColor = .red
+            self.mListener?.onTabClick(type: 2)
         }
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.commonInit()
+    }
+    
+    public func setListener(listener : TabClickListener) {
+        self.mListener = listener
     }
     
     required init?(coder: NSCoder) {
@@ -61,4 +69,9 @@ class TextbookTabTableView: UIView {
         }
     }
 
+}
+
+
+protocol TabClickListener {
+    func onTabClick(type : Int)
 }

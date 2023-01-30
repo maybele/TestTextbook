@@ -7,7 +7,21 @@
 
 import UIKit
 
-class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,TabClickListener {
+    func onTabClick(type: Int) {
+        if(type == 1) {
+            // course
+            datasource = MainDataSource.courseDataSource
+        } else if(type == 2) {
+            // favorites
+            datasource = MainDataSource.seriesDataSource
+        } else {
+            // series
+            datasource = MainDataSource.seriesDataSource
+        }
+        self.tbTableView.reloadData()
+    }
+        
 
     @IBOutlet weak var tabSelec: TextbookTabTableView!
     @IBOutlet weak var tbTableView: UITableView!
@@ -36,6 +50,7 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
 
 //      //  tbTableView.register(UITableViewCell.self,
 //                               forCellReuseIdentifier: "TextbookListViewCell")
+        self.tabSelec.setListener(listener: self)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
