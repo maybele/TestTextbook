@@ -82,7 +82,7 @@
                         <viewLayoutGuide key="safeArea" id="DkP-tM-z3h"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="DkP-tM-z3h" firstAttribute="bottom" secondItem="5Id-lh-jLk" secondAttribute="bottom" id="HwD-Ug-VMC"/>
+                            <constraint firstItem="DkP-tM-z3h" firstAttribute="bottom" secondItem="5Id-lh-jLk" secondAttribute="bottom" id="EBb-Qk-IRD"/>
                             <constraint firstItem="DkP-tM-z3h" firstAttribute="trailing" secondItem="5Id-lh-jLk" secondAttribute="trailing" id="MXc-Yw-NCj"/>
                             <constraint firstItem="5fV-su-oZM" firstAttribute="top" secondItem="DkP-tM-z3h" secondAttribute="top" id="NpF-3R-oY9"/>
                             <constraint firstItem="5Id-lh-jLk" firstAttribute="top" secondItem="5fV-su-oZM" secondAttribute="bottom" id="Os9-p0-clg"/>
@@ -98,71 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="65T-KZ-HCi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4517" y="65"/>
-        </scene>
-        <!--Home-->
-        <scene sceneID="cUV-Hf-97C">
-            <objects>
-                <viewController id="MkM-8K-h3r" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XHv-F9-bO1">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="1rD-s8-gat"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="sti-cs-ky7"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c81-Vt-FI9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5238.7850467289718" y="782.72138228941685"/>
-        </scene>
-        <!--Textbook-->
-        <scene sceneID="2ix-PU-Jag">
-            <objects>
-                <viewController id="fNt-uU-RXo" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oBx-h8-p8T">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="rsk-Bi-PMf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Textbook" image="book" catalog="system" id="Hsd-oZ-LSr"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P1J-gI-VfX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4661" y="1616"/>
-        </scene>
-        <!--Learning-->
-        <scene sceneID="p3v-C6-Jxq">
-            <objects>
-                <viewController id="Os8-hn-B1j" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vap-tC-7cK">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="tLU-Av-MCz"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Learning" image="note" catalog="system" id="YFJ-oP-5Ki"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QVj-ha-hJa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5661" y="1616"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="L6B-IK-U1K">
-            <objects>
-                <viewController id="BSK-98-c2Z" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="naf-1E-MLc">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="gB8-Nb-SkQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="wrench" catalog="system" id="OrN-tD-b8e"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RtW-Qm-AZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6618" y="1616"/>
+            <point key="canvasLocation" x="4516.8224299065414" y="64.794816414686835"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="zKQ-oM-S39">
@@ -171,8 +107,23 @@
                     <view key="view" contentMode="scaleToFill" id="Xg0-V5-Nla">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hME-Uj-M0P" customClass="WebView" customModule="TestTextbook" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="428" height="804"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jXi-yc-MFb"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hME-Uj-M0P" firstAttribute="top" secondItem="jXi-yc-MFb" secondAttribute="top" id="Ew9-oC-gmI"/>
+                            <constraint firstItem="jXi-yc-MFb" firstAttribute="trailing" secondItem="hME-Uj-M0P" secondAttribute="trailing" id="J0u-vw-Mpk"/>
+                            <constraint firstItem="hME-Uj-M0P" firstAttribute="leading" secondItem="jXi-yc-MFb" secondAttribute="leading" id="MFJ-xT-YzE"/>
+                            <constraint firstItem="hME-Uj-M0P" firstAttribute="top" secondItem="jXi-yc-MFb" secondAttribute="top" id="o34-B1-6Ey"/>
+                            <constraint firstItem="jXi-yc-MFb" firstAttribute="bottom" secondItem="hME-Uj-M0P" secondAttribute="bottom" id="sfN-eA-6hj"/>
+                            <constraint firstItem="hME-Uj-M0P" firstAttribute="top" secondItem="jXi-yc-MFb" secondAttribute="top" id="wqx-Q6-fD8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4rB-ZO-vOk">
                         <barButtonItem key="rightBarButtonItem" title="..." id="106-o1-w4w">
@@ -183,6 +134,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XB7-Te-rdr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6958.8785046728972" y="64.794816414686835"/>
+        </scene>
+        <!--Subcategory View Controller-->
+        <scene sceneID="OLw-Se-yh0">
+            <objects>
+                <viewController id="b2O-qa-H15" customClass="SubcategoryViewController" customModule="TestTextbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZC4-Xn-gkj">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MZM-ee-MVi">
+                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="C7I-pU-QbO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C7I-pU-QbO" firstAttribute="trailing" secondItem="MZM-ee-MVi" secondAttribute="trailing" id="BQh-ka-v1d"/>
+                            <constraint firstItem="MZM-ee-MVi" firstAttribute="top" secondItem="C7I-pU-QbO" secondAttribute="top" id="GKA-hG-0cb"/>
+                            <constraint firstItem="MZM-ee-MVi" firstAttribute="leading" secondItem="C7I-pU-QbO" secondAttribute="leading" id="LNe-0A-hfJ"/>
+                            <constraint firstItem="C7I-pU-QbO" firstAttribute="bottom" secondItem="MZM-ee-MVi" secondAttribute="bottom" id="TTm-mO-XsK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="subcategoryTableView" destination="MZM-ee-MVi" id="rvb-JT-kh2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nS6-Ac-Fyg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7813" y="65"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lXd-Ji-NoW">
@@ -209,27 +190,6 @@
             </objects>
             <point key="canvasLocation" x="2610" y="66"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="NEA-8H-sI5">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="MqQ-Ai-7qO" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Jo-2U-34h">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="MkM-8K-h3r" kind="relationship" relationship="viewControllers" id="V4T-IF-Mzx"/>
-                        <segue destination="fNt-uU-RXo" kind="relationship" relationship="viewControllers" id="ckH-vo-Tni"/>
-                        <segue destination="Os8-hn-B1j" kind="relationship" relationship="viewControllers" id="MYO-86-wsT"/>
-                        <segue destination="BSK-98-c2Z" kind="relationship" relationship="viewControllers" id="NdP-Cz-oWc"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="INy-Ze-OY2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4338.7850467289718" y="782.72138228941685"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="PAT-OP-7fc">
             <objects>
@@ -253,10 +213,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="book" catalog="system" width="128" height="99"/>
-        <image name="homekit" catalog="system" width="128" height="106"/>
-        <image name="note" catalog="system" width="128" height="106"/>
-        <image name="wrench" catalog="system" width="128" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

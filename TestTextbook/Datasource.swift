@@ -13,7 +13,25 @@ class MainDataSource {
         Textbook(title: "Series 1", level: nil, description: "Series 1", subcat: [
             Subcategory(title: "Part 1",chapters: [
                             Chapter(chapTitle: "Chapter G1",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G2",isFavorite: true)
+                            Chapter(chapTitle: "Chapter G2",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G3",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G4",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G5",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G6",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G7",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G8",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G9",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G10",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G11",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G12",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G13",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G14",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G15",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G16",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G17",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G18",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G19",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G20",isFavorite: true)
                             ]),
             Subcategory(title: "Part 2",chapters: [
                             Chapter(chapTitle: "Chapter G1",isFavorite: true),
