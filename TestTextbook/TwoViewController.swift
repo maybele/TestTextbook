@@ -11,15 +11,23 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
     func onTabClick(type: Int) {
         if(type == 1) {
             // course
-            datasource = MainDataSource.courseDataSource
+            datasource = MainDataSource.seriesDataSource
         } else if(type == 2) {
             // favorites
-            datasource = MainDataSource.getFavorites()
+            datasource = MainDataSource.courseDataSource
         } else {
             // series
-            datasource = MainDataSource.seriesDataSource
+            datasource = MainDataSource.getFavorites()
         }
+        
         if datasource.count == 0 {
+            if type == 1 {
+                self.noTextbookView.noTextbookLabel.text = "No series to display"
+            } else if type == 2 {
+                self.noTextbookView.noTextbookLabel.text = "No course to display"
+            } else {
+                self.noTextbookView.noTextbookLabel.text = "You have not added your favorite textbooks yet. Tap the mark ♡ on the chapter selection to add."
+            }
             self.noTextbookView.isHidden = false
             self.tbTableView.isHidden = true
         } else {
@@ -41,19 +49,11 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
         self.tbTableView.delegate = self
         self.tbTableView.dataSource = self
         
-        self.datasource = MainDataSource.courseDataSource
+        self.datasource = MainDataSource.seriesDataSource
         
-        if datasource.count == 0 {
-            self.noTextbookView.isHidden = false
-            self.tbTableView.isHidden = true
-        } else {
-            self.noTextbookView.isHidden = true
-            self.tbTableView.isHidden = false
-        }
+        noTextbookToDisplay()
         
         self.title = "Textbook List"
-        
-        print("test")
         
         let dequeueCell1 = UINib(nibName: "TextbookListViewCell", bundle: Bundle.main)
         let dequeueCell2 = UINib(nibName: "TextbookSearchTableViewCell", bundle: Bundle.main)
@@ -97,4 +97,14 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
          vc.textbook = textbook
          self.navigationController?.pushViewController(vc, animated: true)
      }
+    
+    func noTextbookToDisplay() {
+        if datasource.count == 0 {
+            self.noTextbookView.isHidden = false
+            self.tbTableView.isHidden = true
+        } else {
+            self.noTextbookView.isHidden = true
+            self.tbTableView.isHidden = false
+        }
+    }
 }

@@ -9,6 +9,8 @@ import UIKit
 
 class NoTextbookView: UIView {
 
+    @IBOutlet weak var noTextbookLabel: UILabel!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.commonInit()

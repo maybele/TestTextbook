@@ -24,7 +24,7 @@ class TextbookTabTableView: UIView {
             self.textbookTabLine.backgroundColor = .red
             self.courseTabLine.backgroundColor = .clear
             self.favoritesTabLine.backgroundColor = .clear
-            self.mListener?.onTabClick(type: 0)
+            self.mListener?.onTabClick(type: 1)
         }
     }
     
@@ -33,7 +33,7 @@ class TextbookTabTableView: UIView {
             self.textbookTabLine.backgroundColor = .clear
             self.courseTabLine.backgroundColor = .red
             self.favoritesTabLine.backgroundColor = .clear
-            self.mListener?.onTabClick(type: 1)
+            self.mListener?.onTabClick(type: 2)
         }
     }
     
@@ -42,7 +42,7 @@ class TextbookTabTableView: UIView {
             self.textbookTabLine.backgroundColor = .clear
             self.courseTabLine.backgroundColor = .clear
             self.favoritesTabLine.backgroundColor = .red
-            self.mListener?.onTabClick(type: 2)
+            self.mListener?.onTabClick(type: 0)
         }
     }
     
@@ -68,9 +68,7 @@ class TextbookTabTableView: UIView {
             contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         }
     }
-
 }
-
 
 protocol TabClickListener {
     func onTabClick(type : Int)

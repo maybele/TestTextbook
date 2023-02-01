@@ -25,8 +25,6 @@ class TextbookDetailViewController: UIViewController, UITableViewDelegate, UITab
         self.chapterTableView.delegate = self
         self.chapterTableView.dataSource = self
         
-        print("test")
-        
         let xibDueDateSwitchTableViewCell = UINib(nibName: "ChapterListTableViewCell", bundle: Bundle.main)
         chapterTableView.register(xibDueDateSwitchTableViewCell, forCellReuseIdentifier: "ChapterListTableViewCell")
        
