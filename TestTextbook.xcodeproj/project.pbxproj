@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AA0C012DECAF4D14C656F08 /* libPods-TestTextbook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA724C57439CECF6ED71CAF /* libPods-TestTextbook.a */; };
 		BA0827F029853F5C005A4087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0827EF29853F5C005A4087 /* AppDelegate.swift */; };
 		BA0827F229853F5C005A4087 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0827F129853F5C005A4087 /* SceneDelegate.swift */; };
 		BA0827F429853F5C005A4087 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0827F329853F5C005A4087 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		BA5C1446298A721000E521D2 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5C1445298A721000E521D2 /* WebView.swift */; };
 		BA74AB3F2985473100E62205 /* Textbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74AB3E2985473100E62205 /* Textbook.swift */; };
 		BA77DCD529891A8E00FC07C1 /* NetflixTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA77DCD429891A8E00FC07C1 /* NetflixTabBarController.swift */; };
+		BAD105BD298BFF3F00A6E970 /* SubcategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD105BC298BFF3F00A6E970 /* SubcategoryView.swift */; };
 		BAD6877B29856295002DA326 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6877A29856295002DA326 /* TwoViewController.swift */; };
 		BAD6877D29856F73002DA326 /* TextbookHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD6877C29856F73002DA326 /* TextbookHeaderView.swift */; };
 		BAD6877F29856F82002DA326 /* TextbookHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD6877E29856F82002DA326 /* TextbookHeaderView.xib */; };
@@ -40,6 +42,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BA724C57439CECF6ED71CAF /* libPods-TestTextbook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTextbook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		594B1AE26D0230FA749DCE7D /* Pods-TestTextbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTextbook.debug.xcconfig"; path = "Target Support Files/Pods-TestTextbook/Pods-TestTextbook.debug.xcconfig"; sourceTree = "<group>"; };
 		BA0827EC29853F5C005A4087 /* TestTextbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTextbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0827EF29853F5C005A4087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA0827F129853F5C005A4087 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 		BA5C1445298A721000E521D2 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		BA74AB3E2985473100E62205 /* Textbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textbook.swift; sourceTree = "<group>"; };
 		BA77DCD429891A8E00FC07C1 /* NetflixTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixTabBarController.swift; sourceTree = "<group>"; };
+		BAD105BC298BFF3F00A6E970 /* SubcategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoryView.swift; sourceTree = "<group>"; };
 		BAD6877A29856295002DA326 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		BAD6877C29856F73002DA326 /* TextbookHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextbookHeaderView.swift; sourceTree = "<group>"; };
 		BAD6877E29856F82002DA326 /* TextbookHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextbookHeaderView.xib; sourceTree = "<group>"; };
@@ -72,6 +77,7 @@
 		BAE1E41F298575EA00897C9F /* ChapterListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListTableViewCell.swift; sourceTree = "<group>"; };
 		BAE1E420298575EA00897C9F /* ChapterListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterListTableViewCell.xib; sourceTree = "<group>"; };
 		BAE1E42929857FB100897C9F /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
+		FC75F5BD2948AD1FBD0B2565 /* Pods-TestTextbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTextbook.release.xcconfig"; path = "Target Support Files/Pods-TestTextbook/Pods-TestTextbook.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,17 +85,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA0C012DECAF4D14C656F08 /* libPods-TestTextbook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2727A770FA5C8B61CA323392 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				594B1AE26D0230FA749DCE7D /* Pods-TestTextbook.debug.xcconfig */,
+				FC75F5BD2948AD1FBD0B2565 /* Pods-TestTextbook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AB08295AE4F6A34C91483450 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BA724C57439CECF6ED71CAF /* libPods-TestTextbook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA0827E329853F5B005A4087 = {
 			isa = PBXGroup;
 			children = (
 				BA0827EE29853F5C005A4087 /* TestTextbook */,
 				BA0827ED29853F5C005A4087 /* Products */,
+				2727A770FA5C8B61CA323392 /* Pods */,
+				AB08295AE4F6A34C91483450 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +147,7 @@
 				BA5C1437298A405400E521D2 /* SubcategoryTableViewCell.swift */,
 				BA5C1438298A405400E521D2 /* SubcategoryTableViewCell.xib */,
 				BA5C143B298A41C800E521D2 /* SubcategoryViewController.swift */,
+				BAD105BC298BFF3F00A6E970 /* SubcategoryView.swift */,
 				BAD687802985716B002DA326 /* TextbookDetailViewController.swift */,
 				BAD6877C29856F73002DA326 /* TextbookHeaderView.swift */,
 				BAD6877E29856F82002DA326 /* TextbookHeaderView.xib */,
@@ -154,6 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA08280029853F5E005A4087 /* Build configuration list for PBXNativeTarget "TestTextbook" */;
 			buildPhases = (
+				4F08749166C28AAFB35CCE76 /* [CP] Check Pods Manifest.lock */,
 				BA0827E829853F5C005A4087 /* Sources */,
 				BA0827E929853F5C005A4087 /* Frameworks */,
 				BA0827EA29853F5C005A4087 /* Resources */,
@@ -222,6 +250,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F08749166C28AAFB35CCE76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestTextbook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA0827E829853F5C005A4087 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -232,6 +285,7 @@
 				BA0827F429853F5C005A4087 /* ViewController.swift in Sources */,
 				BA74AB3F2985473100E62205 /* Textbook.swift in Sources */,
 				BAD687812985716B002DA326 /* TextbookDetailViewController.swift in Sources */,
+				BAD105BD298BFF3F00A6E970 /* SubcategoryView.swift in Sources */,
 				BA5C1439298A405400E521D2 /* SubcategoryTableViewCell.swift in Sources */,
 				BADA34E62986B27D00B59E59 /* TextbookSearchTableViewCell.swift in Sources */,
 				BA406EC929880B310003624B /* NoTextbookView.swift in Sources */,
@@ -386,6 +440,7 @@
 		};
 		BA08280129853F5E005A4087 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 594B1AE26D0230FA749DCE7D /* Pods-TestTextbook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -414,6 +469,7 @@
 		};
 		BA08280229853F5E005A4087 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC75F5BD2948AD1FBD0B2565 /* Pods-TestTextbook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

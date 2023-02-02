@@ -8,18 +8,25 @@
 import UIKit
 import WebKit
 
-class TextbookDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class TextbookDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, OnSubcategoryClick {
+    
+    func onSubcatClick() {
+        performSegue(withIdentifier: "SubcategorySegue", sender: nil)
+    }
+    
+    var datasource : [Textbook] = []
+    var chapterDataSource : [Chapter] = []
+    
     @IBOutlet weak var headerView: TextbookHeaderView!
     @IBOutlet weak var chapterTableView: UITableView!
     
     var textbook: Textbook?
+    var tabType: Int?
 
-    var chapterDataSource : [Chapter] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.headerView.setListener(listener: self)
         self.title = "Chapter"
         
         self.chapterTableView.delegate = self
@@ -53,8 +60,9 @@ class TextbookDetailViewController: UIViewController, UITableViewDelegate, UITab
         
         let chapter = chapterDataSource[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChapterListTableViewCell", for: indexPath) as! ChapterListTableViewCell
+        
         cell.chapterTextLabel.text = chapter.chapTitle
-       
+
         return cell
     }
     
@@ -65,7 +73,17 @@ class TextbookDetailViewController: UIViewController, UITableViewDelegate, UITab
      }
     
     func setSubCategory(category : Subcategory) {
-        self.chapterDataSource = category.chapters
+      //  self.chapterDataSource = category.chapters
+        
+        for chapter in category.chapters {
+            if tabType == 1 || tabType == 2 || (tabType == 0 && chapter.isFavorite) {
+                self.chapterDataSource.append(chapter)
+            }
+        }
         self.chapterTableView.reloadData()
     }
+}
+
+protocol OnSubcategoryClick {
+    func onSubcatClick()
 }

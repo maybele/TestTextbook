@@ -11,7 +11,17 @@ class TextbookHeaderView: UIView {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var subcategoryButton: UIButton!
     
+    private var mListener : OnSubcategoryClick?
+    
+    @IBAction func onTapSubcategory(_ sender: UIButton) {
+        self.mListener?.onSubcatClick()
+    }
+    
+    func setListener(listener : OnSubcategoryClick) {
+        self.mListener = listener
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.commonInit()

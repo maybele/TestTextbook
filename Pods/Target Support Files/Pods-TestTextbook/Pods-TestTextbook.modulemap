@@ -1,0 +1,6 @@
+module Pods_TestTextbook {
+  umbrella header "Pods-TestTextbook-umbrella.h"
+
+  export *
+  module * { export * }
+}

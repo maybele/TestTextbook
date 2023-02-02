@@ -29,7 +29,6 @@ class WebViewController: UIViewController {
         let myURL = URL(string:"https://english.fdc-inc.com/sp/textbook/view?connect_id=813&class=travel_english_entry&chapter=1&main_html_directory=travel_english_entry&main_chapter=1&alt_html_directory=&alt_chapter=&textbook_category_type=0&user_id=55106&licenser=0&show_related_textbook=1&deviceType=2&appVersion=5.0.0")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
-    
     }
     
     @objc private func buttonTouched() {

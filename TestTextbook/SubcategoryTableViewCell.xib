@@ -27,9 +27,11 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
+                    <constraint firstItem="YeA-A8-HWI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mym-Bg-AsF"/>
                     <constraint firstItem="YeA-A8-HWI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Ztr-rv-gKx"/>
                     <constraint firstAttribute="bottom" secondItem="YeA-A8-HWI" secondAttribute="bottom" constant="15" id="dFU-kd-Aeh"/>
                     <constraint firstAttribute="trailing" secondItem="YeA-A8-HWI" secondAttribute="trailing" constant="15" id="f9R-WE-sqo"/>
+                    <constraint firstItem="YeA-A8-HWI" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="n3x-Gb-peF"/>
                     <constraint firstItem="YeA-A8-HWI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="zKZ-KC-T4s"/>
                 </constraints>
             </tableViewCellContentView>

@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextbookHeaderView" customModule="TestTextbook" customModuleProvider="target">
             <connections>
                 <outlet property="descLabel" destination="NtE-qb-X05" id="xKh-Ni-bUI"/>
+                <outlet property="subcategoryButton" destination="SI1-yQ-eOg" id="LR7-a0-AUX"/>
                 <outlet property="titleLabel" destination="VYr-3U-fOl" id="MHH-Tw-gVV"/>
             </connections>
         </placeholder>
@@ -212,8 +213,12 @@
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI1-yQ-eOg">
                                             <rect key="frame" x="20" y="20" width="75" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain"/>
+                                            <connections>
+                                                <action selector="onTapSubcategory:" destination="-1" eventType="touchUpInside" id="ens-HV-Uco"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

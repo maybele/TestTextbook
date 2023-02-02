@@ -12,30 +12,30 @@ class MainDataSource {
     public static var seriesDataSource: [Textbook] = [
         Textbook(title: "Series 1", level: nil, description: "Series 1", subcat: [
             Subcategory(title: "Part 1",chapters: [
-                            Chapter(chapTitle: "Chapter G1",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G2",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G3",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G4",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G5",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G6",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G7",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G8",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G9",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G10",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G11",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G12",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G13",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G14",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G15",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G16",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G17",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G18",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G19",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G20",isFavorite: true)
+                            Chapter(chapTitle: "Fav G1",isFavorite: true),
+                            Chapter(chapTitle: "Fav G2",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G3",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G4",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G5",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G6",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G7",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G8",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G9",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G10",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G11",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G12",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G13",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G14",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G15",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G16",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G17",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G18",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G19",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G20",isFavorite: false)
                             ]),
             Subcategory(title: "Part 2",chapters: [
-                            Chapter(chapTitle: "Chapter G1",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G2",isFavorite: true)
+                            Chapter(chapTitle: "Chapter G1",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G2",isFavorite: false)
                             ])]),
         Textbook(title: "Series 2 コース", level: nil, description: "英会話を初めて学習する方、英語であいさつ・自己紹介ができるようになりたい方を対象としたコースです。基礎から英語を学びたい方のための教材をご用意しています。", subcat: [
             Subcategory(title: "Favorite 1",chapters: [
@@ -122,12 +122,12 @@ class MainDataSource {
     public static var courseDataSource: [Textbook] = [
         Textbook(title: "Course 1", level: nil, description: "Description GGGGG1", subcat: [
             Subcategory(title: "Part 1", chapters: [
-                            Chapter(chapTitle: "Chapter G1",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G2",isFavorite: true)
+                            Chapter(chapTitle: "Chapter G1",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G2",isFavorite: false)
                             ]),
             Subcategory(title: "Part 2", chapters: [
-                            Chapter(chapTitle: "Chapter G1",isFavorite: true),
-                            Chapter(chapTitle: "Chapter G2",isFavorite: true)
+                            Chapter(chapTitle: "Chapter G1",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G2",isFavorite: false)
                             ])])
 //        Textbook(title: "Course 2 コース", level: nil, description: "英会話を初めて学習する方、英語であいさつ・自己紹介ができるようになりたい方を対象としたコースです。基礎から英語を学びたい方のための教材をご用意しています。", subcat: [
 //            Subcategory(title: "Part 1", chapters: [
@@ -221,7 +221,7 @@ class MainDataSource {
         for textbook in seriesDataSource {
             categoryLoop : for category in textbook.subcat {
                 for chapter in category.chapters {
-                    if(chapter.isFavorite) {
+                    if (chapter.isFavorite) {
                         favoriteTextbooks.append(textbook)
                         break categoryLoop
                     }

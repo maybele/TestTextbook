@@ -7,7 +7,10 @@
 
 import UIKit
 
-class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate,TabClickListener {
+class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, TabClickListener {
+    
+    var tabType: Int = 1
+    
     func onTabClick(type: Int) {
         if(type == 1) {
             // course
@@ -19,6 +22,8 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
             // series
             datasource = MainDataSource.getFavorites()
         }
+        
+        tabType = type
         
         if datasource.count == 0 {
             if type == 1 {
@@ -88,13 +93,14 @@ class TwoViewController: UIViewController, UITableViewDataSource, UITableViewDel
         if indexPath.row == 0 {
             return
         }
-            
+        
          let textbook = datasource[indexPath.row-1]
-
+    
          let storyboard = UIStoryboard(name: "Main", bundle: nil)
          let vc = storyboard.instantiateViewController(withIdentifier: "TextbookDetailViewController") as! TextbookDetailViewController
 
          vc.textbook = textbook
+        vc.tabType = tabType
          self.navigationController?.pushViewController(vc, animated: true)
      }
     
