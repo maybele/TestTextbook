@@ -139,7 +139,7 @@
         <!--Subcategory View Controller-->
         <scene sceneID="OLw-Se-yh0">
             <objects>
-                <viewController id="b2O-qa-H15" customClass="SubcategoryViewController" customModule="TestTextbook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SubcategoryViewController" id="b2O-qa-H15" customClass="SubcategoryViewController" customModule="TestTextbook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZC4-Xn-gkj">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,16 +151,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="428" height="748"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GIq-Fb-zH6">
-                                                <rect key="frame" x="0.0" y="0.0" width="428" height="748"/>
+                                                <rect key="frame" x="50" y="200" width="328" height="348"/>
                                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="2Uv-lH-HKW"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ra3-ew-SeG"/>
+                                                </constraints>
                                             </tableView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="GIq-Fb-zH6" secondAttribute="trailing" id="Keb-DN-AG0"/>
-                                            <constraint firstAttribute="bottom" secondItem="GIq-Fb-zH6" secondAttribute="bottom" id="nn3-Sk-KUh"/>
-                                            <constraint firstItem="GIq-Fb-zH6" firstAttribute="top" secondItem="RXh-7B-Zgl" secondAttribute="top" id="teP-aQ-8oj"/>
-                                            <constraint firstItem="GIq-Fb-zH6" firstAttribute="leading" secondItem="RXh-7B-Zgl" secondAttribute="leading" id="upc-Fk-a9H"/>
+                                            <constraint firstItem="GIq-Fb-zH6" firstAttribute="top" secondItem="RXh-7B-Zgl" secondAttribute="top" constant="200" id="BFN-Xs-WNl"/>
+                                            <constraint firstItem="GIq-Fb-zH6" firstAttribute="centerY" secondItem="RXh-7B-Zgl" secondAttribute="centerY" id="Mf7-MO-35y"/>
+                                            <constraint firstItem="GIq-Fb-zH6" firstAttribute="centerX" secondItem="RXh-7B-Zgl" secondAttribute="centerX" id="R1D-RD-1lk"/>
+                                            <constraint firstItem="GIq-Fb-zH6" firstAttribute="leading" secondItem="RXh-7B-Zgl" secondAttribute="leading" constant="50" id="gAw-Ob-f3G"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoK-It-Tuv">
@@ -206,7 +210,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="C7I-pU-QbO" firstAttribute="bottom" secondItem="EwI-M9-a4J" secondAttribute="bottom" id="47x-ot-DhC"/>
-                            <constraint firstItem="EwI-M9-a4J" firstAttribute="leading" secondItem="C7I-pU-QbO" secondAttribute="leading" id="gA7-gu-UgI"/>
+                            <constraint firstItem="EwI-M9-a4J" firstAttribute="leading" secondItem="C7I-pU-QbO" secondAttribute="leading" id="Hv6-mo-V5C"/>
                             <constraint firstItem="EwI-M9-a4J" firstAttribute="top" secondItem="C7I-pU-QbO" secondAttribute="top" id="lve-xN-BBM"/>
                             <constraint firstItem="C7I-pU-QbO" firstAttribute="trailing" secondItem="EwI-M9-a4J" secondAttribute="trailing" id="zbM-25-wp5"/>
                         </constraints>

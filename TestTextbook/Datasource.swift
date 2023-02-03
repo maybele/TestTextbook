@@ -13,11 +13,11 @@ class MainDataSource {
         Textbook(title: "Series 1", level: nil, description: "Series 1", subcat: [
             Subcategory(title: "Part 1",chapters: [
                             Chapter(chapTitle: "Fav G1",isFavorite: true),
-                            Chapter(chapTitle: "Fav G2",isFavorite: true),
+                            Chapter(chapTitle: "Fav G2",isFavorite: false),
                             Chapter(chapTitle: "Chapter G3",isFavorite: false),
                             Chapter(chapTitle: "Chapter G4",isFavorite: false),
-                            Chapter(chapTitle: "Chapter G5",isFavorite: false),
-                            Chapter(chapTitle: "Chapter G6",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G5",isFavorite: true),
+                            Chapter(chapTitle: "Chapter G6",isFavorite: true),
                             Chapter(chapTitle: "Chapter G7",isFavorite: false),
                             Chapter(chapTitle: "Chapter G8",isFavorite: false),
                             Chapter(chapTitle: "Chapter G9",isFavorite: false),
@@ -47,7 +47,7 @@ class MainDataSource {
             ])]),
         Textbook(title: "Series 2 コース", level: nil, description: "英会話を初めて学習する方、英語であいさつ・自己紹介ができるようになりたい方を対象としたコースです。基礎から英語を学びたい方のための教材をご用意しています。", subcat: [
             Subcategory(title: "Favorite 1",chapters: [
-                            Chapter(chapTitle: "Fav A1",isFavorite: true),
+                            Chapter(chapTitle: "Fav A1",isFavorite: false),
                             Chapter(chapTitle: "Chapter A2",isFavorite: false)
                             ]),
             Subcategory(title: "Part 2",chapters: [

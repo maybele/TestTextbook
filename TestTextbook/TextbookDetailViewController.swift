@@ -11,7 +11,7 @@ import WebKit
 class TextbookDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, OnSubcategoryClick {
     
     func onSubcatClick() {
-        performSegue(withIdentifier: "SubcategorySegue", sender: nil)
+        performSegue(withIdentifier: "SubcategorySegue", sender: self)
     }
     
     var datasource : [Textbook] = []
