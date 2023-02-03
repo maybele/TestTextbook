@@ -275,6 +275,9 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="stepValue">
                                                         <real key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="value">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
                                                         <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>

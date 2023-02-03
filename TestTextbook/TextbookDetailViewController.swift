@@ -16,6 +16,7 @@ class TextbookDetailViewController: UIViewController, UITableViewDelegate, UITab
     
     var datasource : [Textbook] = []
     var chapterDataSource : [Chapter] = []
+    var subcategoryDatasource : [Subcategory] = []
     
     @IBOutlet weak var headerView: TextbookHeaderView!
     @IBOutlet weak var chapterTableView: UITableView!
@@ -83,6 +84,7 @@ class TextbookDetailViewController: UIViewController, UITableViewDelegate, UITab
         self.chapterTableView.reloadData()
     }
 }
+    
 
 protocol OnSubcategoryClick {
     func onSubcatClick()

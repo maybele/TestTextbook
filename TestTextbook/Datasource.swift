@@ -36,7 +36,15 @@ class MainDataSource {
             Subcategory(title: "Part 2",chapters: [
                             Chapter(chapTitle: "Chapter G1",isFavorite: false),
                             Chapter(chapTitle: "Chapter G2",isFavorite: false)
-                            ])]),
+            ]),
+        Subcategory(title: "Part 2",chapters: [
+                        Chapter(chapTitle: "Chapter G1",isFavorite: false),
+                        Chapter(chapTitle: "Chapter G20",isFavorite: false)
+                        ]),
+            Subcategory(title: "Part 2",chapters: [
+                            Chapter(chapTitle: "Chapter G1",isFavorite: false),
+                            Chapter(chapTitle: "Chapter G20",isFavorite: false)
+            ])]),
         Textbook(title: "Series 2 コース", level: nil, description: "英会話を初めて学習する方、英語であいさつ・自己紹介ができるようになりたい方を対象としたコースです。基礎から英語を学びたい方のための教材をご用意しています。", subcat: [
             Subcategory(title: "Favorite 1",chapters: [
                             Chapter(chapTitle: "Fav A1",isFavorite: true),

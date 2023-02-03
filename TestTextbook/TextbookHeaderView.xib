@@ -21,10 +21,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z5u-oi-YKe">
-                    <rect key="frame" x="0.0" y="15" width="506" height="272"/>
+                    <rect key="frame" x="0.0" y="15" width="506" height="287"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pBq-7e-bUo">
-                            <rect key="frame" x="0.0" y="0.0" width="506" height="187"/>
+                            <rect key="frame" x="0.0" y="0.0" width="506" height="202"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="t3i-o4-VEk">
                                     <rect key="frame" x="0.0" y="0.0" width="506" height="100"/>
@@ -169,7 +169,7 @@
                                     </constraints>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6E-jG-zbd">
-                                    <rect key="frame" x="0.0" y="100" width="506" height="87"/>
+                                    <rect key="frame" x="0.0" y="100" width="506" height="102"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="基礎から英語を学びたい方のための教材をご用意しています。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtE-qb-X05">
                                             <rect key="frame" x="15" y="0.0" width="476" height="17"/>
@@ -194,7 +194,7 @@
                             </constraints>
                         </stackView>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YXD-E1-C4x">
-                            <rect key="frame" x="0.0" y="197" width="506" height="75"/>
+                            <rect key="frame" x="0.0" y="212" width="506" height="75"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdB-BT-OQA">
                                     <rect key="frame" x="0.0" y="0.0" width="506" height="75"/>
@@ -234,7 +234,6 @@
                     </subviews>
                     <constraints>
                         <constraint firstItem="YXD-E1-C4x" firstAttribute="top" secondItem="pBq-7e-bUo" secondAttribute="bottom" constant="10" id="62L-2A-hrE"/>
-                        <constraint firstAttribute="bottom" secondItem="YXD-E1-C4x" secondAttribute="bottom" id="zcb-Gm-8fY"/>
                     </constraints>
                 </stackView>
             </subviews>
@@ -243,8 +242,8 @@
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Z5u-oi-YKe" secondAttribute="trailing" id="Kbz-FC-XhB"/>
                 <constraint firstItem="Z5u-oi-YKe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="Z3Q-yE-X4p"/>
+                <constraint firstAttribute="bottom" secondItem="Z5u-oi-YKe" secondAttribute="bottom" id="fXb-Dh-bVd"/>
                 <constraint firstItem="Z5u-oi-YKe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="fsz-qy-N5I"/>
-                <constraint firstAttribute="bottom" secondItem="Z5u-oi-YKe" secondAttribute="bottom" constant="15" id="pJY-PQ-3LY"/>
                 <constraint firstItem="Z5u-oi-YKe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xpD-2b-ZQW"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
